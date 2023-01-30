@@ -2,8 +2,8 @@ const MongoClient = require('mongodb').MongoClient;
 
 async function copyCollections() {
     
-    var db1 = "NOT THAT DUMB";
-    var db2 = "NOT THAT DUMB xD";
+    var db1 = "db-1 url";
+    var db2 = "db-2 url";
     const client1 = await MongoClient.connect(db1, { useNewUrlParser: true, useUnifiedTopology: true });
     const client2 = await MongoClient.connect(db2, { useNewUrlParser: true, useUnifiedTopology: true });
     db1 = client1.db("src_db");
